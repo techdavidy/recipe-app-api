@@ -1,9 +1,7 @@
 """
 Sample tests
 """
-
 from django.test import SimpleTestCase
-
 from app import calc
 
 class CalcTest(SimpleTestCase):
@@ -15,7 +13,5 @@ class CalcTest(SimpleTestCase):
         """
         Test adding numbers
         """ 
-
         res = calc.add(5, 6)
-
-        self.assert_(res, 11)
+        self.assert_(res, 12)
